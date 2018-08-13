@@ -13,7 +13,8 @@ const authRedirect = _import('login/authredirect');
 
 const dataCenter = _import('list/index');
 const detail = _import('echarts/echarts');
-
+const personDetail = _import('echarts/personDetail');
+const cityDetail = _import('echarts/cityDetail');
 Vue.use(Router);
 
 export const constantRouterMap = [
@@ -29,6 +30,8 @@ export const constantRouterMap = [
     children: [
       {path: 'list', component: dataCenter},
       {path: 'detail', component: detail},
+      {path: 'personDetail', component: personDetail},
+      {path: 'cityDetail', component: cityDetail},
     ]
   },
   // {

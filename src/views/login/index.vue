@@ -7,11 +7,11 @@
       <el-form autoComplete="on" :model="loginForm" ref="loginForm" label-position="left" label-width="0px"
         class="card-box login-form">
           <el-form-item prop="loginName">
-            <i class='ico ico1'></i>
+            <i class='ico1'></i>
             <el-input name="loginName" type="text" v-model="loginForm.loginName" placeholder="用户名"></el-input>
           </el-form-item>
           <el-form-item prop="pwd">
-            <i class='ico ico2'></i>
+            <i class='ico2'></i>
             <el-input name="pwd" type="password" v-model="loginForm.pwd" placeholder="密码"></el-input>
           </el-form-item>
         <el-form-item class='loginBox'>
@@ -104,8 +104,8 @@
 <style rel="stylesheet/scss" lang="scss">
   .login-container {
     position:fixed;
-    background-image: url(../../assets/img/login_bg.jpg);
-    background-size:cover; 
+    background-image: url(../../assets/img/login_bg.png);
+    background-size:cover;
     width: 100%;
     height: 100%;
     top:0;
@@ -141,23 +141,30 @@
       .el-input__inner{
         background:none;
         border:none;
-        border-bottom:1px solid #4083d7;
+        border-bottom:1px solid #9ba5ad;
         padding-left:60px;
-        border-radius:0;  
+        border-radius:0;
         color: #fff;
       }
       .el-input{
         position: relative;
       }
-      .ico{
-        width:32px;
-        height: 34px;
+      .ico1{
+        width:28px;
+        height: 26px;
         position: absolute;
-        background: url(../../assets/img/icons.png) no-repeat;
+        background: url(../../assets/img/user.png) no-repeat 100% 100% / 100% 100%;
         left:10px;
+        top:2px;
+
       }
       .ico2{
-        background-position:0px -50px;
+        width:28px;
+        height: 26px;
+        position: absolute;
+        background: url(../../assets/img/password.png) no-repeat 100% 100% / 100% 100%;
+        left:10px;
+        top:2px;
       }
       .el-form-item{
         margin-bottom: 30px;
@@ -167,9 +174,8 @@
       }
     }
     .el-form{
-      width:326px;  
-      margin:0 auto;
-      margin-top: 50px;
+      width:326px;
+      margin:50px auto;
     }
     .loginBtn{
       width: 326px;
@@ -177,10 +183,10 @@
       border-radius:50px;
       margin:0 auto;
       font-size: 24px;
-      background:#ddeefd;
+      background:#dceefd;
       border:none;
       margin:0 auto;
-      color:#2482e3;
+      color:#041d3f;
       font-weight: 500;
     }
     .loginBtn:hover{

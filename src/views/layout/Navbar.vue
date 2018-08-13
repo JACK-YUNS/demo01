@@ -5,14 +5,17 @@
         <router-link to="/dataCenter/list">
           <img src="../../assets/img/login_logo.png" alt="logo" class="fl">
         </router-link>
-        <span class="fl tit">国家癌症防控信息管理平台</span>
+        <span class="fl tit">早诊早治数据分析</span>
         <div class="fr">
           <el-dropdown class="avatar-container" hide-on-click >
             <router-link to="/dataCenter/list">
             首页
           </router-link>
             <span class="avatar-wrapper">
-              {{loginName}} 您好！
+              {{loginName}} &nbsp;您好！
+            </span>
+            <span class="avatar-wrapper news">
+              通知公告（2）
             </span>
             <router-link to='/login'>
               <span class='loginOut'>退出</span>
@@ -33,9 +36,9 @@
       }
     },
     computed: {
-     
+
     },
-   
+
     methods: {
     }
   }
@@ -48,7 +51,7 @@
   .navbar {
     width: 100%;
     height:184px;
-    background: #168ae9 url(../../assets/img/top_bg.jpg) no-repeat;
+    background: #168ae9 url(../../assets/img/top_bg.png) no-repeat;
     .con{
       width:1260px;
       margin:0 auto;
@@ -57,11 +60,11 @@
       margin-top:70px;
     }
     .tit{
-      font-size: 36px;
+      font-size: 26px;
       color:#fff;
-      font-weight: 550;
+      font-weight:200 ;
       margin-left: 70px;
-      margin-top:70px;
+      margin-top:78px;
       line-height: 1;
     }
     .hamburger-container {
@@ -113,6 +116,10 @@
           top: 25px;
           font-size: 12px;
         }
+      }
+      .news{
+        padding-left:30px;
+        background: url('../../assets/img/news.png') no-repeat 0 1px /16px 16px ;
       }
     }
   }

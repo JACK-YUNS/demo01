@@ -9,7 +9,7 @@
     name: 'login',
     data() {
       return {
-        
+
 
       }
     },
